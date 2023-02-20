@@ -1,0 +1,15 @@
+.tumb {
+    background: #FF6060;
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    padding: 20px;
+}
