@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom';
 import './tumb.css'
-function Tumb() {
+function Tumb({appartment}) {
     return (
-      <div className="tumb">
-        Tumb 
+      <Link className="tumb-container" to={`/appartment/${appartment.id}`}>
+      <div className="tumb" style={{
+        backgroundImage: `url(${appartment.cover})`
+      }}>
+        {appartment.title} 
       </div>
+      </Link>
     );
   }
   export default Tumb;

@@ -1,26 +1,26 @@
 .collapse {
     width: 100%;
     background: #F7F7F7;
+    margin-bottom: 20px;
 }
 .collapse-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: green;
     height: 47px;
-    background: #FF6060;
+    background: var(--primary-color);
     border-radius: 5px;
     color: #fff;
     padding: 2px 10px;
 }
 .collapse-body {
     border-radius: 5px;
-    padding: 20px 0px;
     padding: 2px 10px;
-    color:#FF6060;
-    font-family: Montserrat;
-    font-size: 24px;
+    color:var(--primary-color);
+    font-family: 'Montserrat';
+    font-size: 17px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0em;
+    margin: 20px 0px;
 }

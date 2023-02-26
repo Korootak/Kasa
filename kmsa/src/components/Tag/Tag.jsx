@@ -1,8 +1,8 @@
 import './tag.css'
-function Tag() {
+function Tag({title}) {
     return (
       <div className='tag'>
-        Tag  
+        {title}
       </div>
     );
   }

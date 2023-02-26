@@ -1,5 +1,5 @@
 .tumb {
-    background: #FF6060;
+    background: var(--primary-color);
     border-radius: 10px;
     width: 340px;
     height: 340px;
@@ -12,4 +12,11 @@
     align-items: flex-end;
     color: #FFFFFF;
     padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-size: cover;
+
+}
+.tumb-container {
+    text-decoration: none;
 }

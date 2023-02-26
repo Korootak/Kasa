@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://s3-eu-west-1.amazonaws.com",
   "eslintConfig": {
     "extends": [
       "react-app",
