@@ -1,8 +1,9 @@
 .collapse {
-    width: 100%;
-    background: #F7F7F7;
-    margin-bottom: 20px;
+    /* width: 100%; */
+    background: #F6F6F6;
+    margin: 33px 100px;
 }
+
 .collapse-header {
     display: flex;
     align-items: center;
@@ -11,16 +12,20 @@
     background: var(--primary-color);
     border-radius: 5px;
     color: #fff;
-    padding: 2px 10px;
+    padding: 2px 18px;
+}
+.collapse-header div {
+    font-size: 24px;
 }
 .collapse-body {
     border-radius: 5px;
-    padding: 2px 10px;
-    color:var(--primary-color);
+    padding: 2px 27px;
+    color: var(--primary-color);
     font-family: 'Montserrat';
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 34px;
+    /* line-height: 34px; */
+    padding-bottom: 10px;
     letter-spacing: 0em;
-    margin: 20px 0px;
+    margin: 15px 0px 25px;
 }

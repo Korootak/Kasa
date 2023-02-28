@@ -11,22 +11,22 @@ body {
     font-family: "Montserrat";
 }
 .page {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
 }
 
 
 .hero-banner {
-    margin: 20px 0px;
+    margin: 0px 100px 43px;
     height: 223px;
     border-radius: 14px;
     background-image: url(./assets/wellcome-hero-banner.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-
+    /* width: 100%; */
     position: relative;
+    border-radius: 25px;
 }
 .hero-banner::before {
     content: "";
@@ -43,28 +43,34 @@ body {
 
 .heading-hero {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 68px;
     color: #FFFFFF;
     font-family: Montserrat;
 }
 .hero-banner-inner {
+    width: 100%;
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+    justify-content: center;
 }
 .content-container {
+    margin: 0 100px;
     background-color: #F6F6F6;
     height: auto;
+    border-radius: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 15px 20px;
+    padding: 56px 50px 0px;
 }
 .collapse-container {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
+    margin: 0 208px;
 }
 .not-found-container {
     width: 100%;
@@ -74,7 +80,7 @@ body {
     justify-content: center;
 }
 .text404 {
-    font-size: 230px;
+    font-size: 288px;
     font-weight: 700;
     letter-spacing: 0em;
     text-align: center;
@@ -91,6 +97,7 @@ body {
     margin-bottom: 20px;
 }
 .link-404 {
+    color: #ff6060;
     margin-top: 20px;
     font-size: 18px;
     font-weight: 500;
@@ -98,7 +105,7 @@ body {
     text-align: center;
 }
 .heading-primary {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 0em;
@@ -113,28 +120,35 @@ body {
     color: var(--primary-color);
 }
 .user-avatar {
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     border-radius: 100%;
 }
 .appartment-detail {
+    margin: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .host-detail {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+.host-detail-container {
+    display: inline-grid;
+    justify-items: center;
+}
+
 .host-name {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 26px;
     color: var(--primary-color);
     text-align: right;
-    margin-right: 7px;
-    align-self: flex-start;
+    margin-right: 10px;
+    /* align-self: flex-start; */
 }
 
 @media only screen and (max-width: 600px) {

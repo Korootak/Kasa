@@ -2,7 +2,8 @@ import { useState } from 'react';
 import ArrowDown from '../UI-Elements/icons/ArrowDown';
 import ArrowUp from '../UI-Elements/icons/ArrowUp';
 import './collapse.css'
-function Collapse({title , body}) {
+function Collapse(props) {
+  const { title } = props;
   const [isOpen , setIsOpen] = useState(false);
     return (
       <div className='collapse'>
@@ -25,7 +26,7 @@ function Collapse({title , body}) {
          isOpen ? 
          (
          <div className="collapse-body">
-              {body}
+              {props.children}
         </div>
         ) 
         :

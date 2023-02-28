@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Carousel from '../components/Carousel/Carousel';
-import Tumb from '../components/Tumb/Tumb';
 import Tag from '../components/Tag/Tag';
-import Collpase from '../components/Collapse/Collapse';
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header';
 import Collapse from '../components/Collapse/Collapse';
@@ -12,17 +10,16 @@ import { useParams } from 'react-router-dom'
 function Appartment() {
   const { id } = useParams()
   const [appartment , setAppartment] = useState(null);
-
     useEffect(() => {
       fetch('/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json')
       .then(response => response.json())
       .then(data => {
-        console.log(data)
         if(data && data.length > 0 ) {
-          setAppartment(data.filter(f => f.id == id)[0]);
+          setAppartment(data.filter(f => f.id === id)[0]);
         } 
       });
-  }, [])
+  // eslint-disable-next-line
+    }, [])
   return (
     <div className='page'>
     <Header/>
@@ -48,17 +45,14 @@ function Appartment() {
     </div>
 
     <div>
-        <Collapse title="Description"
-         body={
-          appartment ? appartment.description : ""
-         }
-        />
+        <Collapse title="Description">
+        {appartment ? appartment.description : ""}
+        </Collapse>
 
       <Collapse title="Equipment"
-      body={
-        appartment ? appartment.description : ""
-      }
-      />
+      > {
+        appartment && appartment.equipments.map((equ) => <p>{equ}</p>)
+      }</Collapse>
 
     </div>
 

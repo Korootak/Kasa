@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
        <div>
-        <img  height={35} src={require('../../assets/logored.png')} alt="logo" />
+        <img  height={68} width={210} src={require('../../assets/logored.png')} alt="logo" />
        </div>
        <div>
           <ul className="nav-bar">
