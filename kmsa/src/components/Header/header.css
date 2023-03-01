@@ -7,23 +7,27 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 .nav-bar {
     display: flex;
     list-style: none;
 }
+
 .nav-bar li:not(:last-child) {
     margin-right: 30px;
 }
+
 .nav-bar li a {
     color: #FF6060;
     font-weight: 500;
     font-size: 24px;
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
     .nav-bar li a {
         font-size: 16px;
-    }   
+    }
+
     header div img {
         height: 20px;
     }

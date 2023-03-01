@@ -14,17 +14,19 @@
     color: #fff;
     padding: 2px 18px;
 }
+
 .collapse-header div {
-    font-size: 24px;
+    font-size: 18px;
 }
+
 .collapse-body {
     border-radius: 5px;
     padding: 2px 27px;
     color: var(--primary-color);
     font-family: 'Montserrat';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    /* line-height: 34px; */
+    line-height: 34px;
     padding-bottom: 10px;
     letter-spacing: 0em;
     margin: 15px 0px 25px;

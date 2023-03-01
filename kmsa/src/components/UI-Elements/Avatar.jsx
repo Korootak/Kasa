@@ -1,8 +1,12 @@
-import React from 'react'
-function Avatar({url}) {
+import React from "react";
+function Avatar({ url }) {
   return (
-    <img className="user-avatar"  src={url ? url : require('../../assets/defaultavatar.png')} alt="useravatar" />
-  )
+    <img
+      className="user-avatar"
+      src={url ? url : require("../../assets/defaultavatar.png")}
+      alt="useravatar"
+    />
+  );
 }
 
-export default Avatar
+export default Avatar;
