@@ -1,6 +1,6 @@
 import React from "react";
 
-function Star({ filled, width = 30, height = 30 }) {
+function Star({ filled, width = 20, height = 20 }) {
   return (
     <span
       style={{

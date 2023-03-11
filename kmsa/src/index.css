@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+.Testing {
+    display: flex;
+    gap: 100px;
+    margin: 0 100px;
+}
 
 .hero-banner {
     margin: 0px 100px 43px;
@@ -170,11 +175,36 @@ body {
 @media only screen and (max-width: 600px) {
     .hero-banner {
         height: 114px;
+        margin: auto;
+        width: 90%;
+    }
+
+    .Testing {
+        width: 90%;
+        margin: auto;
+        display: flow-root;
+    }
+
+    .host-name {
+        font-size: 14px;
+    }
+
+    .host-detail-container {
+        align-items: center;
+    }
+
+    .host-detail {
+        margin-bottom: 0px;
+    }
+
+    .page {
+        /* width: 90%; */
+        margin: 0 auto;
     }
 
     .hero-banner-inner {
-        left: 32%;
-        top: 50%;
+        /* left: 32%;
+        top: 50%; */
     }
 
     .heading-hero {
@@ -183,15 +213,18 @@ body {
 
     .content-container {
         justify-content: center;
+        background-color: unset;
     }
 
     .tumb {
-        width: 415px !important;
+        /* width: 415px !important; */
         margin-right: 0px !important
     }
 
     .heading-primary {
         font-size: 16px;
+        line-height: unset;
+        /* margin: 10px 0; */
     }
 
     .heading-secondary {
@@ -199,8 +232,11 @@ body {
     }
 
     .appartment-detail {
+        width: 90%;
         flex-direction: column;
         align-items: flex-start;
+        margin: auto;
+        margin-top: 230px;
     }
 
     .appartmentdetail {
@@ -216,5 +252,14 @@ body {
 
     .host-detail {
         order: 2;
+    }
+
+    .carousel-item {
+        width: 90%;
+        margin: auto !important;
+    }
+
+    .carousel-controlls {
+        top: 100% !important;
     }
 }

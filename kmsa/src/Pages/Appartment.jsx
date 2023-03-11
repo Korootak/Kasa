@@ -47,7 +47,7 @@ function Appartment() {
         </div>
       </div>
 
-      <div>
+      <div className="Testing">
         <Collapse title="Description">
           {appartment ? appartment.description : ""}
         </Collapse>

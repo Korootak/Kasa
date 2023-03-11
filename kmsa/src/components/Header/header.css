@@ -30,5 +30,12 @@ header {
 
     header div img {
         height: 20px;
+        width: 70px;
+    }
+
+    header {
+        margin: auto;
+        width: 90%;
+        padding: 0px 0px;
     }
 }
